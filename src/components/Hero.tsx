@@ -6,7 +6,7 @@ export function Hero() {
     <div className="flex">
       <div className="flex w-2/5 flex-col items-start justify-center gap-10 font-quick">
         <div className="text-8xl">
-          <h2>Va mais longe, pedale com</h2>
+          <h2>Vá mais longe, pedale com</h2>
           <h1 className="mt-4 w-fit bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
             E-CON BIKE
           </h1>
@@ -19,7 +19,7 @@ export function Hero() {
           COMPRE AGORA
         </button>
         <div className="mx-auto flex flex-col gap-4">
-          <span className="text-lg">Saiba mais</span>
+          <span className="text-xl">Saiba mais</span>
           <Scroll height="50px" />
         </div>
       </div>
