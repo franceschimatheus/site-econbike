@@ -7,9 +7,9 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-/* * { 
+* { 
   outline:1px blue solid;
 } 
 *:hover { 
   outline:2px red solid;
-}  */
+}

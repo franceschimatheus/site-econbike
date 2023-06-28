@@ -2,12 +2,13 @@
   --clouds-time: 60s;
   --mountains-time: 40s;
   --trees-time: 20s;
+  --main-delay: 12s;
 }
 
 
 /* FRONT-WHEEL */
 #front-wheel {
-  animation: front-wheel 3s linear infinite;
+  animation: front-wheel 3s var(--main-delay) linear infinite;
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -23,7 +24,7 @@
 
 /* BACK-WHEEL */
 #back-wheel {
-  animation: back-wheel 3s 2 linear forwards, back-wheel-off 3s 6s linear forwards;
+  animation: back-wheel 3s var(--main-delay) linear forwards, back-wheel-off 3s 6s linear forwards;
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -75,13 +76,13 @@
 
 /* BATTERY */
 #battery {
-  animation: battery 10s linear forwards;  
+  animation: battery 6s linear forwards;  
 }
 @keyframes battery {
   0% {
     opacity: 0;
   }
-  50% {
+  30% {
     opacity: 0;
     transform: translateX(-20%) translateY(-50%);
   }
@@ -111,7 +112,8 @@
 
 /* CLOUDS */
 #clouds-1 {
-  animation: clouds-1 var(--clouds-time) linear infinite;
+  translate: -120%;
+  animation: clouds-1 var(--clouds-time) var(--main-delay) linear infinite;
 }
 @keyframes clouds-1 {
   from {
@@ -123,7 +125,8 @@
 }
 
 #clouds-2 {
-  animation: clouds-2 var(--clouds-time) linear infinite;
+  translate: -40%;
+  animation: clouds-2 var(--clouds-time) var(--main-delay) linear infinite;
 }
 @keyframes clouds-2 {
   from {
@@ -135,7 +138,8 @@
 }
 
 #clouds-3 {
-  animation: clouds-3 var(--clouds-time) linear infinite;
+  translate: 40%;
+  animation: clouds-3 var(--clouds-time) var(--main-delay) linear infinite;
 }
 @keyframes clouds-3 {
   from {
@@ -149,7 +153,8 @@
 
 /* MOUNTAINS */
 #mountains-1 {
-  animation: mountains-1 var(--mountains-time) linear infinite;
+  translate: -100%;
+  animation: mountains-1 var(--mountains-time) var(--main-delay) linear infinite;
 }
 @keyframes mountains-1 {
   from {
@@ -161,7 +166,7 @@
 }
 
 #mountains-2 {
-  animation: mountains-2 var(--mountains-time) linear infinite;
+  animation: mountains-2 var(--mountains-time) var(--main-delay) linear infinite;
 }
 @keyframes mountains-2 {
   from {
@@ -175,7 +180,8 @@
 
 /* TREES */
 #trees-1 {
-  animation: trees-1 var(--trees-time) linear infinite;
+  translate: -100%;
+  animation: trees-1 var(--trees-time) var(--main-delay) linear infinite;
 }
 @keyframes trees-1 {
   from {
@@ -187,7 +193,7 @@
 }
 
 #trees-2 {
-  animation: trees-2 var(--trees-time) linear infinite;
+  animation: trees-2 var(--trees-time) var(--main-delay) linear infinite;
 }
 @keyframes trees-2 {
   from {
