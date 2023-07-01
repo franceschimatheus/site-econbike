@@ -16,6 +16,7 @@ module.exports = {
       },
 
       colors: {
+        instagram: { 500: '#881166' },
         gray: {
           50: '#eaeaea',
           100: '#bebebf',
