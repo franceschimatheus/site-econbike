@@ -1,18 +1,19 @@
-'use client'
-import { motion } from 'framer-motion'
+"use client";
+import { motion } from "framer-motion";
 
-import Image from 'next/image'
+import Image from "next/image";
 
-import FAQs from '../data/FAQ'
-import { useState, useRef, useEffect } from 'react'
+import FAQs from "../data/FAQ";
+import { useState, useRef, useEffect } from "react";
 
 export function FAQ() {
-  const [width, setWidth] = useState(0)
-  const carousel = useRef<HTMLDivElement | null>(null)
+  const [width, setWidth] = useState(0);
+  const carousel = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    setWidth(carousel.current!.scrollWidth - carousel.current!.offsetWidth)
-  }, [])
+    if (!carousel.current) return;
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, []);
 
   return (
     // flex w-full flex-col items-center justify-center gap-6 p-2 px-4 font-quick text-gray-50 md:px-32 lg:gap-12 lg:p-16
@@ -21,7 +22,7 @@ export function FAQ() {
       <motion.div
         ref={carousel}
         className="flex w-full cursor-grab overflow-hidden"
-        whileTap={{ cursor: 'grabbing' }}
+        whileTap={{ cursor: "grabbing" }}
       >
         <motion.div
           drag="x"
@@ -37,10 +38,10 @@ export function FAQ() {
                   className="pointer-events-none w-44 md:w-52 lg:w-64 xl:w-72"
                 />
               </motion.div>
-            )
+            );
           })}
         </motion.div>
       </motion.div>
     </section>
-  )
+  );
 }

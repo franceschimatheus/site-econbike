@@ -1,11 +1,7 @@
-'use client'
-import { useWindowSize } from '@/hooks/useWindowSize'
-import { Biker } from './Biker/Biker'
-import { Scroll } from './Scroll/Scroll'
+import { Biker } from "./Biker/Biker";
+import { Scroll } from "./Scroll/Scroll";
 
 export function Hero() {
-  const { width } = useWindowSize()
-  console.log(width)
   return (
     <div className="flex flex-col md:flex-row">
       <div className="flex flex-col items-start justify-center gap-10 font-quick md:w-2/5">
@@ -16,7 +12,9 @@ export function Hero() {
           </h1>
         </div>
         <div className="flex h-fit w-full items-center justify-center overflow-hidden md:hidden md:w-3/5">
-          {width < 768 ? <Biker height="30vh" /> : ''}
+          <div className="md:hidden">
+            <Biker height="30vh" />
+          </div>
         </div>
         <p className="max-w-2xl font-quick text-lg lg:text-xl xl:text-2xl">
           A escolha inteligente para aqueles que optam por mais liberdade e
@@ -31,8 +29,10 @@ export function Hero() {
         </div>
       </div>
       <div className="flex h-0 items-center justify-center overflow-hidden md:h-[70vh] md:w-3/5">
-        {width >= 768 ? <Biker height="70vh" /> : ' '}
+        <div className="max-md:hidden">
+          <Biker height="70vh" />
+        </div>
       </div>
     </div>
-  )
+  );
 }
