@@ -28,9 +28,9 @@ export function FAQ() {
           dragConstraints={{ right: 0, left: -width }}
           className="flex w-full gap-6 lg:gap-12"
         >
-          {FAQs.map((image) => {
+          {FAQs.map((image, index) => {
             return (
-              <motion.div key={image} className="min-w-fit">
+              <motion.div key={index} className="min-w-fit">
                 <Image
                   src={image}
                   alt=""

@@ -1,23 +1,23 @@
-import { ReactNode } from 'react'
-import './globals.css'
+import { ReactNode } from "react";
+import "./globals.css";
 
-import { Inter, Quicksand } from 'next/font/google'
+import { Inter, Quicksand } from "next/font/google";
 
 const inter = Inter({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-inter',
-})
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter",
+});
 const quicksand = Quicksand({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-quicksand',
-})
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-quicksand",
+});
 
 export const metadata = {
-  title: 'E-CON BIKE',
-  description: 'Kit para conversão de bicicletas convencionais em e-bikes',
-}
+  title: "E-CON BIKE",
+  description: "Kit para conversão de bicicletas convencionais em e-bikes",
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -30,5 +30,5 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </main>
       </body>
     </html>
-  )
+  );
 }
