@@ -1,7 +1,7 @@
-import './scroll.css'
+import "./scroll.css";
 
 interface ScrollProps {
-  height: string
+  height: string;
 }
 
 export function Scroll({ height }: ScrollProps) {
@@ -90,5 +90,5 @@ export function Scroll({ height }: ScrollProps) {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }

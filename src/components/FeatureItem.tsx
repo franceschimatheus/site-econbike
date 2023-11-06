@@ -1,14 +1,14 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import { useState } from 'react'
+import Image from "next/image";
+import { useState } from "react";
 
 interface FeatureItemProps {
-  icon: string
-  title: string
-  span: string
-  small: string
-  text: string
+  icon: string;
+  title: string;
+  span: string;
+  small: string;
+  text: string;
 }
 
 export default function FeatureItem({
@@ -18,18 +18,18 @@ export default function FeatureItem({
   small,
   text,
 }: FeatureItemProps) {
-  const [collapsed, setCollapsed] = useState(true)
+  const [collapsed, setCollapsed] = useState(true);
 
   return (
     <div
       onMouseEnter={() => {
-        setCollapsed(false)
+        setCollapsed(false);
       }}
       // onMouseLeave={() => {
       //   setCollapsed(true)
       // }}
       onClick={() => {
-        setCollapsed(!collapsed)
+        setCollapsed(!collapsed);
       }}
       className="group relative col-span-4 mx-auto h-fit max-w-[320px] rounded-xl bg-gradient-to-r from-green-400 to-blue-500 p-4 py-8 sm:col-span-2 min-[1360px]:col-span-1"
     >
@@ -47,12 +47,12 @@ export default function FeatureItem({
         <div
           className={`max-h-0 overflow-hidden rounded-xl bg-gray-50 text-center text-lg text-gray-100 transition-all duration-1000 ${
             !collapsed &&
-            'inline h-full max-h-[28rem] p-4 py-8 text-green-900 transition-all duration-1000'
+            "inline h-full max-h-[28rem] p-4 py-8 text-green-900 transition-all duration-1000"
           } `}
         >
           {text}
         </div>
       </div>
     </div>
-  )
+  );
 }
