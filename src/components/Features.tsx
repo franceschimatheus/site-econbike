@@ -1,12 +1,15 @@
-import Lightning from '../assets/lightning.svg'
-import GasPump from '../assets/gas-pump.svg'
-import Weight from '../assets/weigth.svg'
-import Money from '../assets/money.svg'
-import FeatureItem from './FeatureItem'
+import Lightning from "../assets/lightning.svg";
+import GasPump from "../assets/gas-pump.svg";
+import Weight from "../assets/weigth.svg";
+import Money from "../assets/money.svg";
+import FeatureItem from "./FeatureItem";
 
 export function Features() {
   return (
-    <section className="justify flex min-h-[75vh] w-full flex-col items-center justify-start gap-6 px-8 py-2 font-quick text-gray-50 lg:gap-12 lg:py-16">
+    <section
+      id="features"
+      className="justify flex min-h-[75vh] w-full flex-col items-center justify-start gap-6 px-8 py-2 font-quick text-gray-50 lg:gap-12 lg:py-16"
+    >
       <h3 className="font-quick text-5xl">Features</h3>
       <div className="grid h-full w-full grid-cols-4 gap-6 text-green-900">
         <FeatureItem
@@ -55,5 +58,5 @@ export function Features() {
         />
       </div>
     </section>
-  )
+  );
 }

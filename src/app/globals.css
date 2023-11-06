@@ -7,9 +7,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* * { 
-  outline:1px blue solid;
-} 
-*:hover { 
-  outline:2px red solid;
+* {
+  scroll-behavior: smooth !important;
+}
+/* * {
+  outline: 1px blue solid;
+}
+*:hover {
+  outline: 2px red solid;
 } */

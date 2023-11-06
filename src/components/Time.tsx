@@ -1,12 +1,15 @@
-import { FaCode, FaBriefcase } from 'react-icons/fa6'
+import { FaCode, FaBriefcase } from "react-icons/fa6";
 
-import Image from 'next/image'
+import Image from "next/image";
 
-import Matheus from '../assets/matheus.png'
+import Matheus from "../assets/matheus.png";
 
 export function Time() {
   return (
-    <section className="flex w-full flex-col items-center justify-center gap-6 px-4 py-2 font-quick text-gray-50 lg:gap-12 lg:py-16">
+    <section
+      id="team"
+      className="flex w-full flex-col items-center justify-center gap-6 px-4 py-2 font-quick text-gray-50 lg:gap-12 lg:py-16"
+    >
       <h3 className="text-3xl sm:text-4xl lg:text-5xl">O Time</h3>
       <div className="flex w-full flex-col items-center justify-evenly gap-8 md:flex-row">
         <div className="flex w-72 flex-col items-center justify-center gap-8 rounded-3xl bg-white p-4 text-green-900 sm:w-96 sm:p-8 md:px-4 lg:p-8">
@@ -41,5 +44,5 @@ export function Time() {
         </div>
       </div>
     </section>
-  )
+  );
 }

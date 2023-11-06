@@ -1,7 +1,7 @@
-import './biker.css'
+import "./biker.css";
 
 interface BikerProps {
-  height: string
+  height: string;
 }
 
 export function Biker({ height }: BikerProps) {
@@ -1362,5 +1362,5 @@ export function Biker({ height }: BikerProps) {
         </clipPath>
       </defs>
     </svg>
-  )
+  );
 }

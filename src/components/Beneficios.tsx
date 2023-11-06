@@ -1,12 +1,15 @@
-import Image from 'next/image'
-import Equalizer from '../assets/equalizer.svg'
-import PlugBattery from '../assets/plug-battery.svg'
-import CircleArrows from '../assets/circle-arrows.svg'
-import WrenchClock from '../assets/wrench-clock.svg'
+import Image from "next/image";
+import Equalizer from "../assets/equalizer.svg";
+import PlugBattery from "../assets/plug-battery.svg";
+import CircleArrows from "../assets/circle-arrows.svg";
+import WrenchClock from "../assets/wrench-clock.svg";
 
 export function Beneficios() {
   return (
-    <section className="flex w-full flex-col items-center justify-center gap-6 rounded-3xl bg-gray-50 px-4 py-2 font-quick text-green-900 lg:gap-12 lg:py-16">
+    <section
+      id="beneficios"
+      className="flex w-full flex-col items-center justify-center gap-6 rounded-3xl bg-gray-50 px-4 py-2 font-quick text-green-900 lg:gap-12 lg:py-16"
+    >
       <h3 className="mt-2 text-center text-3xl font-semibold sm:text-4xl lg:text-5xl">
         Muitos benefícios só para você!
       </h3>
@@ -57,7 +60,7 @@ export function Beneficios() {
             </h4>
             <p>
               Ao invés de se obrigar a comprar uma scooter ou patinete elétrico
-              que não são visualmente agradáveis, ao utilizar o{' '}
+              que não são visualmente agradáveis, ao utilizar o{" "}
               <span className="whitespace-nowrap">E-CON BIKE</span> você está
               trazendo um novo significado a sua bicicleta.
             </p>
@@ -82,5 +85,5 @@ export function Beneficios() {
         </div>
       </div>
     </section>
-  )
+  );
 }

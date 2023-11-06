@@ -10,17 +10,18 @@ import { YouKnow } from "@/components/YouKnow";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-10 px-4 py-2 md:gap-20 lg:px-20 lg:py-10">
+    <>
       <Navbar />
-      <Hero />
-      <YouKnow />
-      <Beneficios />
-      <Features />
-      <Components />
-      <FAQ />
-      <Time />
-      <Contatos />
-      <div className="h-[1000px]"></div>
-    </div>
+      <div className="mt-32 flex flex-col gap-10 px-4 py-2 md:gap-20 lg:px-20 lg:py-10">
+        <Hero />
+        <YouKnow />
+        <Beneficios />
+        <Features />
+        <Components />
+        <FAQ />
+        <Time />
+        <Contatos />
+      </div>
+    </>
   );
 }

@@ -7,11 +7,14 @@ import {
   FaInstagram,
   FaFacebook,
   FaLinkedin,
-} from 'react-icons/fa6'
+} from "react-icons/fa6";
 
 export function Contatos() {
   return (
-    <section className="flex w-full flex-col items-center justify-center gap-6 p-2 px-4 font-quick text-gray-50 md:px-32 lg:gap-12 lg:p-16">
+    <section
+      id="contact"
+      className="flex w-full flex-col items-center justify-center gap-6 p-2 px-4 font-quick text-gray-50 md:px-32 lg:gap-12 lg:p-16"
+    >
       <h3 className="text-center text-3xl sm:text-4xl lg:text-5xl">
         Quer falar com a gente?
       </h3>
@@ -78,5 +81,5 @@ export function Contatos() {
         <FaFacebook size={40} className="text-blue-600" color="#FFB300" />
       </div>
     </section>
-  )
+  );
 }
